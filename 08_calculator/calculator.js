@@ -10,12 +10,16 @@ const sum = function(nums) {
 	return nums.reduce((total,current) => total+current, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(nums) {
+  return nums.reduce((total,current) => total*current, 1);
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+  let ret = 1;
+  for (let i=0; i<b; i++){
+    ret = ret*a;
+  }
+	return ret;
 };
 
 const factorial = function() {
